@@ -5,11 +5,11 @@ export const Container = styled.div`
   align-items: center;
   margin-bottom: 8px;
   padding-right: 16px;
-  border: ${({ theme, isNew }) =>
-    isNew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
+  border: ${({ theme, $isnew }) =>
+    $isnew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
   border-radius: 10px;
-  background: ${({ theme, isNew }) =>
-    isNew ? "transparent" : theme.COLORS.BACKGROUND_900};
+  background: ${({ theme, $isnew }) =>
+    $isnew ? "transparent" : theme.COLORS.BACKGROUND_900};
   color: ${({ theme }) => theme.COLORS.GRAY_300};
 
   > button {

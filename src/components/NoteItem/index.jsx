@@ -3,7 +3,7 @@ import { Container } from "./styles";
 
 export function NoteItem({ isNew = false, value, onClick, ...rest }) {
   return (
-    <Container isNew={isNew}>
+    <Container $isnew={isNew.toString()}>
       <input type="text" value={value} readOnly={!isNew} {...rest} />
       <button
         type="button"
