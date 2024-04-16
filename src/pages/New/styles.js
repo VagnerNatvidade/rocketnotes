@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   display: grid;
   grid-template-rows: 105px auto;
@@ -32,7 +31,7 @@ export const Form = styled.div`
     justify-content: space-between;
     margin-bottom: 36px;
 
-    > a {
+    > button {
       font-size: 20px;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
